@@ -1,0 +1,225 @@
+/* General styles */
+body {
+    background-color: #eceedb;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+a {
+    text-decoration: none;
+}
+
+header {
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0;
+    transition: background-color 0.4s ease-in-out;
+}
+
+header.scrolled {
+    background-color: #dddfce;
+}
+
+.nav-bar {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: relative;
+}
+
+.nav-bar ul li a.active {
+    background-color: #182b0a; 
+    color: white; 
+    padding: 10px 15px; 
+    text-decoration: none;
+}
+
+.nav-bar ul li a.active:hover {
+    background-color: #16a085; 
+}
+
+nav ul {
+    list-style-type: none;
+    width: 100%;
+    padding: 10px;
+    text-align: right; 
+}
+
+nav ul li {
+    display: inline-block; /* Display list items horizontally */
+    list-style: none;
+}
+
+nav ul li a {
+    display: block;
+    padding: 10px 20px; /* Adjust padding as needed */
+    text-decoration: none;
+    color: black;
+}
+
+/* Hover effect for main navigation */
+nav ul li a:hover {
+    color: white;
+    background-color: black;
+}
+
+nav ul li a:active { /* Design when the cursor clicks the link */
+    color: rgb(0, 0, 0);
+    background-color: rgb(255, 255, 255);
+}
+
+ul li ul.dropdown li a {
+    color: white;
+    font-size: 14px;
+    padding: 10px 10px;
+}
+ul li ul.dropdown li {
+    display: block;
+    color: white;
+}
+ul li ul.dropdown {
+    width: 90px;
+    background-color: #182b0a;
+    color: white;
+    position: absolute;
+    z-index: 0;
+    display: none;
+}
+ul li:hover ul.dropdown {
+    display: block;
+}
+.rounded-button{
+    width: 300px;
+    padding: 10px;
+    background-color: #476d2c;
+    color: white;
+    border-radius: 3px;
+    font-size: 16px;
+    cursor: pointer;
+    margin-top: 15px;
+}
+.rounded-button:hover{
+    width: 300px;
+    padding: 10px;
+    background-color: #182b0a;
+    color: white;
+    border-radius: 3px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.text-container{
+    display: flex;
+    margin-left: 20%;
+    margin-right: 20%;
+}
+
+.logo {
+    font-size: 30px; 
+    font-weight: bold; 
+    color: black; 
+    text-decoration: none; 
+    padding: 10px; 
+    transition: background-color 0.3s; 
+    cursor: pointer;
+    font-family: 'Source Code Pro';
+    font-style: italic;
+}
+.logo:hover {
+    background-color: rgba(0, 0, 0, 0.1); 
+    border-radius: 5px; 
+}
+
+h1{
+    margin-left: auto;
+    margin-right: auto;
+}
+.profile{
+    display: inline; /* Use flexbox to align items */
+    align-items: center; /* Center the image vertically */
+    background-color: #476d2c;
+    color: white;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+.schedule-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+    padding: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.booking-card {
+    background-color: #ffffff;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.booking-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2);
+}
+
+.booking-card h2 {
+    margin: 0 0 10px;
+    font-size: 1.5rem;
+    color: #007bff;
+}
+
+.booking-card p {
+    margin: 8px 0;
+    color: #555;
+    font-size: 1rem;
+}
+
+.booking-card strong {
+    color: #333;
+}
+
+.booking-card form {
+    margin-top: 15px;
+}
+
+.booking-card select {
+    padding: 8px;
+    font-size: 1rem;
+    margin-right: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+.booking-card .update-btn {
+    padding: 8px 15px;
+    font-size: 1rem;
+    color: #fff;
+    background-color: #007bff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.booking-card .update-btn:hover {
+    background-color: #0056b3;
+}
+
+.status-message {
+    text-align: center;
+    margin: 10px 0;
+}
+
+.status-message .success {
+    color: green;
+    font-weight: bold;
+}
+
+.status-message .error {
+    color: red;
+    font-weight: bold;
+}

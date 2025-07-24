@@ -1,0 +1,230 @@
+body {
+    background-color:#eceedb;
+    font-family: Arial, Helvetica, sans-serif;
+}
+p.bold {
+    font-weight: bold;
+}
+header {
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0;
+    transition: background-color 0.4s ease-in-out;
+}
+header.scrolled {
+    background-color: #dddfce;
+}
+.home{
+    display: block;
+}
+.home:hover{
+    cursor: pointer;
+}
+.nav-bar {
+    width: 100%;
+    display: flex;
+    align-items: center; /* Align items vertically */
+    justify-content: space-between;
+    position: relative;
+}
+
+nav ul {
+    list-style-type: none;
+    width: auto; /* Change width to auto */
+    padding: 10px;
+    display: flex; /* Use flexbox for the list */
+    align-items: center; /* Center items vertically */
+}
+
+nav ul li {
+    display: inline-block; 
+    list-style: none;
+}
+
+nav ul li a {
+    display: block;
+    padding: 10px 20px; 
+    text-decoration: none;
+    color: black;
+}
+nav ul li a:hover { 
+    color: white;
+    background-color: rgb(0, 0, 0);
+}
+nav ul li a:active { 
+    color: rgb(0, 0, 0);
+    background-color: rgb(255, 255, 255);
+}
+nav ol{
+    color: black;
+    font-family: 'Source Code Pro';
+    font-style: italic;
+    font-weight: bolder;
+    font-size: 25px;
+}
+.logo {
+    font-size: 30px; /* Adjust font size as needed */
+    font-weight: bold; /* Make the text bold */
+    color: black; /* Text color */
+    text-decoration: none; /* Remove underline */
+    padding: 10px; /* Add some padding */
+    transition: background-color 0.3s; /* Smooth transition for hover effect */
+    cursor: pointer;
+    font-family: 'Source Code Pro';
+    font-style: italic;
+}
+.logo:hover {
+    background-color: rgba(0, 0, 0, 0.1); /* Light background on hover */
+    border-radius: 5px; /* Rounded corners on hover */
+}
+.user-pic {
+    height: 30px; /* Adjust height to fit better */
+    width: 30px; /* Adjust width to fit better */
+    border-radius: 50%; /* Keep the circular shape */
+    margin-left: 10px; /* Space between text and image */
+}
+button {
+    background-color: #001743; 
+    color: white; 
+    border: none; 
+    padding: 10px; 
+}
+.login-form {
+    display: block;
+}
+.center{
+    text-align: center;
+}
+.justify{
+    text-align: justify;
+}
+.right{
+    text-align: right;
+}
+.left{
+    text-align: left;
+}
+.imageCenter {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 30%;
+    box-shadow: 2px 2px 5px 8px rgb(0, 0, 0);
+}
+.rounded-textbox{
+    width: 500px;
+    padding: 10px;
+    border-radius: 10px;
+    font-size: 16px;
+    margin-bottom: 15px;
+    display: flex;
+}
+.rounded-button{
+    width: 300px;
+    padding: 10px;
+    background-color: #476d2c;
+    color: white;
+    border-radius: 3px;
+    font-size: 16px;
+    cursor: pointer;
+    margin-top: 15px;
+}
+.rounded-button:hover{
+    width: 300px;
+    padding: 10px;
+    background-color: #182b0a;
+    color: white;
+    border-radius: 3px;
+    font-size: 16px;
+    cursor: pointer;
+}
+.profile {
+    display: flex; /* Use flexbox to align items */
+    align-items: center; /* Center the image vertically */
+    padding: 10px 15px; /* Adjust padding */
+    background-color: #476d2c;
+    color: white;
+    border-radius: 40px;
+    font-size: 16px;
+    cursor: pointer;
+    margin-left: 20px; /* Add margin to separate from other items */
+}
+
+.profile:hover{
+    background-color: #182b0a;
+}
+h1{
+    text-align: center;
+    margin-top: 90px;
+}
+h5{
+    text-align: center;
+}
+.login-container {
+    display: flex;
+    justify-content: center; 
+    align-items: center; 
+    margin: 0 auto; 
+}
+
+.login-form {
+    background-color: #a2a596; 
+    padding: 30px;
+    border-radius: 10px; 
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); 
+}
+ul li ul.dropdown li a {
+    color: white;
+    font-size: 14px;
+    padding: 10px 10px;
+}
+ul li ul.dropdown li {
+    display: block;
+    color: white;
+}
+ul li ul.dropdown {
+    width: 90px;
+    background-color: #182b0a;
+    color: white;
+    position: absolute;
+    z-index: 0;
+    display: none;
+}
+ul li:hover ul.dropdown {
+    display: block;
+}
+
+
+/*Admin-editservice.php */
+.button-two{
+    display: inline;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.rounded-button .button-two{
+    width: fit-content;
+}
+
+table {
+    font-family: arial, sans-serif;
+    border-collapse: collapse;
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 15px;
+  }
+  
+  td, th {
+    border: 1px solid #dddddd;
+    text-align: left;
+    padding: 8px;
+  }
+  
+  tr:nth-child(even) {
+    background-color: #dddddd;
+  }
+  
+  h2{
+      margin-top: 80px;
+  }

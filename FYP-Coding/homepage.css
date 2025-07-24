@@ -1,0 +1,166 @@
+/* General styles */
+body {
+    background-color: #eceedb;
+    font-family: 'Arial', Helvetica, sans-serif;
+    margin: 0;
+    padding: 0;
+    color: #333;
+}
+
+a {
+    text-decoration: none;
+}
+
+header {
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0;
+    transition: background-color 0.4s ease-in-out;
+}
+
+.hero-section {
+    background: linear-gradient(to right, #182b0a, #476d2c);
+    color: white;
+    text-align: center;
+    padding: 100px 20px;
+    height: 100vh;
+}
+
+header.scrolled {
+    background-color: #dddfce;
+}
+
+.nav-bar {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: relative;
+}
+
+nav ul {
+    list-style-type: none;
+    width: 100%;
+    padding: 10px;
+    text-align: right; 
+}
+
+nav ul li {
+    display: inline-block; /* Display list items horizontally */
+    list-style: none;
+}
+
+nav ul li a {
+    display: block;
+    padding: 10px 20px; /* Adjust padding as needed */
+    text-decoration: none;
+    color: black;
+}
+
+/* Hover effect for main navigation */
+nav ul li a:hover {
+    color: white;
+    background-color: black;
+}
+
+nav ul li a:active { /* Design when the cursor clicks the link */
+    color: rgb(0, 0, 0);
+    background-color: rgb(255, 255, 255);
+}
+
+ul li ul.dropdown li a {
+    color: white;
+    font-size: 14px;
+    padding: 10px 10px;
+}
+ul li ul.dropdown li {
+    display: block;
+    color: white;
+}
+ul li ul.dropdown {
+    width: 90px;
+    background-color: #182b0a;
+    color: white;
+    position: absolute;
+    z-index: 0;
+    display: none;
+}
+ul li:hover ul.dropdown {
+    display: block;
+}
+.rounded-button {
+    padding: 15px 30px;
+    background-color: #ff9900;
+    color: white;
+    border-radius: 25px;
+    border: none;
+    font-size: 1em;
+    cursor: pointer;
+    transition: all 0.3s;
+}
+
+.rounded-button:hover {
+    background-color: #182b0a;
+}
+
+.text-container h1 {
+    font-size: 2.5em;
+    margin-bottom: 20px;
+}
+
+.text-container p {
+    font-size: 1.2em;
+    margin-bottom: 30px;
+}
+
+.logo {
+    font-size: 30px; 
+    font-weight: bold; 
+    color: black; 
+    text-decoration: none; 
+    padding: 10px; 
+    transition: background-color 0.3s; 
+    cursor: pointer;
+    font-family: 'Source Code Pro';
+    font-style: italic;
+}
+.logo:hover {
+    background-color: rgba(0, 0, 0, 0.1); 
+    border-radius: 5px; 
+}
+
+h1{
+    margin-left: auto;
+    margin-right: auto;
+}
+.profile{
+    display: inline; /* Use flexbox to align items */
+    align-items: center; /* Center the image vertically */
+    background-color: #476d2c;
+    color: white;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+.footer {
+    background-color: #333; /* Dark background for a sleek look */
+    color: #fff; /* White text for contrast */
+    text-align: center;
+    padding: 20px 0;
+    font-size: 14px;
+}
+
+.footer a {
+    color: #1abc9c; /* Light green links for contrast */
+    text-decoration: none;
+    margin: 0 5px;
+}
+
+.footer a:hover {
+    text-decoration: underline;
+}
+
+.footer-container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
